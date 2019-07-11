@@ -7,7 +7,7 @@ module.exports = {
     name: 'remoteeval',
 
     exec: (client, msg, args) => {
-        if(owners.isOwner(msg.author.id)) {
+        if (owners.isOwner(msg.author.id)) {
             request({
                 method: 'POST',
                 url: `http://127.0.0.1:440${args[0]}/eval`,
